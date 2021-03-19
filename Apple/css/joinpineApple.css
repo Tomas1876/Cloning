@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+}
+
+#container {
+	width: 100%;
+	color: white;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+#header {
+	width: 100%;
+	background-color: black;
+
+}
+
+.menu a {
+	color: lightgray;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menu ul {
+	color: lightgray;
+	text-align: center;
+	text-decoration: none;
+	background-color: black;
+}
+
+
+.joinmenu a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+#header ul {
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+#header ul li {
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+    display:flex;
+    align-items:center;
+}
+
+#top img {
+	width: 100%;
+}
+
+#join {
+	width: 50%;
+	padding: 20px;
+	margin: auto;
+}
+
+#join div, p, ul {
+	text-align: center;
+	color: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: Dotum, '돋움', Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+#join ul li {
+	padding: 10px 0 10px 0;
+	list-style: none;
+	margin: 0;
+}
+
+#join select {
+	width: 50%;
+	height: 29px;
+	font-size: 15px;
+	background: #fff
+		url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100%
+		50% no-repeat;
+	background-size: 20px 8px;
+	-webkit-appearance: none;
+	display: inline-block;
+	text-align: center;
+	border: none;
+	cursor: default;
+}
+
+#join input {
+	width: 50%;
+	height: 29px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: start;
+	margin: 0;
+}
+
+label.message {
+
+	width: 50%;
+	height: 15px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: start;
+	margin: 0;
+	background-color: red;
+
+}
+
+#footer {
+	clear: both;
+	background-color: lightgray;
+	color: gray;
+	text-align: center;
+	height: 100px;
+	padding-top: 40px;
+	list-style: none;
+}
+
+.f a {
+	color: gray;
+	text-decoration: none;
+}

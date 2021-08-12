@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>YouTube Mobile</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span class="title">YouTube</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+
+        <!--Video player-->
+        <section class="player">
+            <video controls src="https://www.youtube.com/watch?v=67stn7Pu7s4"></video>
+        </section>
+        <div class="infoAndUpNext">
+            <!--Video info-->
+        <section class="info">
+            <!--비디오 메타데이터-->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#DreamCoding</li>
+                    <li>#DreamCoders</li>
+                    <li>#Ellie</li>
+                </ul>
+                <div class="titleAndBtn">
+                    <span class="title clamp">
+                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) 
+                        | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                        드림코딩과 함께하는 프론트엔드 실전 입문편
+                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) 
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="views">1M views 1 month ago</span>
+            </div>
+
+            <!--actions-->
+                <ul class="actions">
+                    <li><button><i class="fas fa-thumbs-up"></i>1K</button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i>0</button></li>
+                    <li><button><i class="fas fa-share"></i>Share</button></li>
+                    <li><button><i class="fas fa-plus"></i>Save</button></li>
+                    <li><button><i class="fab fa-font-awesome-flag"></i>Report</button></li>
+                </ul>
+
+            <!--채널 정보-->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="cycoding_img.png" alt="" />
+                    <div class="info">
+                        <span class="name">드림코딩 by 엘리</span>
+                        <span class="subscribers">1M subscribers</span></div>
+                    </div>
+                    <button class="subscribe">subscribe</button> 
+                </div>                         
+            </div>
+        </section>
+        <section class="upNext">
+            <span class="title">Up Next</span>
+            <ul>
+                <li class="items">
+                    <div class="img"><img src="cycoding_img.png"" alt=""></div>
+                    <div class="info">
+                        <span class="title">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) 
+                            | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                        <span class="name">드림코딩 by 엘리</span>
+                        <span class="views">1M views</span>
+                    </div>
+                    <div class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+
+                <li class="items">
+                    <div class="img"><img src="cycoding_img.png"" alt=""></div>
+                    <div class="info">
+                        <span class="title">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) 
+                            | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                        <span class="name">드림코딩 by 엘리</span>
+                        <span class="views">1M views</span>
+                    </div>
+                    <div class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+
+                <li class="items">
+                    <div class="img"><img src="cycoding_img.png"" alt=""></div>
+                    <div class="info">
+                        <span class="title">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) 
+                            | 프론트엔드 개발자 입문편: HTML, CSS, Javascript </span>
+                        <span class="name">드림코딩 by 엘리</span>
+                        <span class="views">1M views</span>
+                    </div>
+                    <div class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        </div>
+
+    <!--
+    <nav>
+        <div id="nav_logo">
+            <i class="fab fa-youtube"></i>
+            <a href="#">YouTube</a>
+        </div>
+        <div id="nav_icons">
+            <ul>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="video">
+        <div>
+
+        </div>
+    </section>
+    <section id="info_box">
+        <article id="about">
+            <div id="info">
+                <p id="hashtags">#DreamCoding #DreamCoders</p>
+                <p id="title">Clone Coding : Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편
+                     HTML, CSS, Javacript
+                </p>
+                <p id="uploadtime">1 years ago</p>
+            </div>
+            <div id="icons">
+                <ul>
+                    <li><i class="fas fa-thumbs-up"></i></li>
+                    <li><i class="fas fa-thumbs-down"></i></li>
+                    <li><i class="fas fa-share"></i></li>
+                    <li><i class="fas fa-plus"></i></li>
+                    <li><i class="fas fa-flag"></i></li>
+                </ul>
+            </div>
+            <div id="channel">
+                <img src="cycoding_img.png" />
+                <p>드림코딩 by엘리</p>
+                <p>SUBSCRIBE</p>
+            </div>
+        </article>
+        <article id="others">
+            <div>
+               <div class="videos">
+                   <div><img src="cycoding_img.png" /></div>
+                    <div><p>비디오1</p></div>
+                </div>
+                <div class="videos">
+                    <div><img src="cycoding_img.png" /></div>
+                     <div><p>비디오1</p></div>
+                 </div> 
+                 <div class="videos">
+                    <div><img src="cycoding_img.png" /></div>
+                     <div><p>비디오1</p></div>
+                 </div> 
+            </div>
+        </article>
+    </section>
+    -->
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

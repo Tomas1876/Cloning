@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 헤더 만들기</title>
+    <link rel="stylesheet" type="text/css" href="ResponsiveHeaader.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fab fa-accusoft"></i>
+            <a href="">DreamCoding</a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Wedding</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+        </ul>    
+        
+        <a href="#" class="navbar_toggleBtn"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <!--
+    <div id="fullwrap">
+        <Header>
+            <div id="header-wrap">
+                <div id="h-left">
+                    <img src="cycoding_img.png" />
+                    <p>Cycoding</p>
+                </div>
+                <div id="h-center">
+                    <ul id="header-menu">
+                        <li>Home</li>
+                        <li>Gallery</li>
+                        <li>Weddings</li>
+                        <li>FAQ</li>
+                        <li>Bookings</li>
+                    </ul>
+                </div>
+                <div id="h-right">
+                    <div class="right-icon"></div>
+                    <div class="right-icon"></div>
+                </div>
+            </div>
+        </Header>
+    </div>
+-->
+</body>
+<script>
+    const toggleBtn = document.querySelector('.navbar_toggleBtn');
+    const menu = document.querySelector('.navbar_menu');
+    const icons = document.querySelector('.navbar_icons');
+
+    toggleBtn.addEventListener('click', ()=>{
+        menu.classList.toggle('active')
+        icons.classList.toggle('active')
+    })
+</script> 
+</html>

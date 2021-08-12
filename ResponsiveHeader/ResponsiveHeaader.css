@@ -1,0 +1,159 @@
+:root{
+    --text-color:#f0f4f5;
+    --background-color:#263343;
+    --accent-color:#d49466;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:var(--background-color);
+    padding:8px 12px;
+}
+a{
+    text-decoration:none;
+    color:var(--text-color);
+}
+
+.navbar_logo{
+    font-size:24px;
+    color:var(--text-color);
+}
+
+.navbar_logo i {
+    color:var(--accent-color);
+}
+
+.navbar_menu{
+    display: flex;
+    padding-left:0;
+}
+.navbar_menu li{
+    padding:8px 12px;
+}
+
+.navbar_menu li:hover{
+    background-color:var(--accent-color);
+    border-radius: 4px;
+}
+
+.navbar_icons {
+    color:var(--text-color);
+    display: flex;
+    padding-left:0;
+}
+
+.navbar_icons li{
+    padding: 8px 12px;
+}
+
+.navbar_toggleBtn{
+    position:absolute;
+    right:32px;
+    font-size:24px;
+    color:var(--accent-color);
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        padding:8px 24px;
+
+        align-items: flex-start;
+        /* 화면이 줄어들었을 때 로고가 중심 수직축에서 벗어나 왼쪽으로 가게 해준다*/
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .navbar_menu li{
+        width:100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width:100%;
+    }
+
+    .navbar_toggleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active, .navbar_icons.active{
+        display:flex;
+    }
+}
+/*
+Header{
+    display: flex;
+    width:100%;
+    height: 50px;
+    padding:10px 0;
+    background-color: navy;
+    color:#fff;  
+}
+
+Header div{
+    align-items: center;
+    height: 50px;
+}
+
+#header-wrap{
+    display: flex;
+    width:90%;
+    margin:auto;
+}
+
+Header div img{
+    width:40px;
+    height: 40px;
+}
+
+Header div p{
+    margin:0;
+    padding-left:10px;
+    height: 40px;
+}
+
+#h-left, #h-right{
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    align-items: center;
+}
+#h-center{
+    margin:auto;
+}
+
+#header-menu{
+    display: flex;
+    text-align: center;
+    flex-wrap:wrap;
+}
+#header-menu li{
+    width:100px;
+
+}
+.right-icon{
+    background-color: #fff;
+    width:30px;
+    height: 30px;
+    border-radius: 15px;
+}
+*/
